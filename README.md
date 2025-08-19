@@ -6,10 +6,15 @@
 ### 2. Objetivo
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O projeto tem como objetivo desenvolver um sistema web que disponibilize informações confiáveis sobre o Autismo, além de oferecer relatos, orientações e conteúdos que favoreçam a compreensão da temática. Busca-se, assim, construir uma plataforma acessível, segura, interativa e atrativa, alinhada ao propósito de disseminar conhecimento e fortalecer a comunicação entre usuários e a empresa.
 
-### 3. Metodologia 
+### 3. OBJETIVO ESPECÍFICO
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Nosso objetivo específico é desenvolver uma plataforma digital interativa que promova conexão e acolhimento. O espaço será voltado para pessoas com TEA (Transtorno do Espectro Autista) e também para mães e cuidadores, permitindo que compartilhem histórias, informações e campanhas de conscientização em uma interface segura, acessível e confiável.
+
+A plataforma reunirá indicações de ONGs - que oferecem apoio a pessoas autistas e suas famílias em todo o Brasil -, além de divulgar campanhas digitais de conscientização voltadas à sociedade como um todo, buscando sensibilizar a sociedade e reduzir o preconceito. Segundo a neurologista Isabella Peixoto Barcelos, a falta de informação é uma das principais causas de estigmas relacionados ao autismo. Também contará com um espaço exclusivo para voluntários e profissionais especializados, que poderão esclarecer dúvidas, orientar as famílias e oferecer suporte de forma colaborativa e solidária.
+
+### 4. Metodologia 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Para a construção do projeto, será utilizada a metologia ágil Scrum, separando a entrega de tarefas em Sprints. Cada Sprint corresponde a um período curto de tempo no qual a equipe trabalha para desenvolver funcionalidades específicas do projeto. Com isso, as tarefas são separadas entre os desenvolvedores, tornando o processo mais organizado e eficiente.
 
-### 4. Resultado Esperado
+### 5. Resultado Esperado
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; É esperado que a plataforma desenvolvida se torne uma referência no fornecimento de informações sobre o Autismo, diferenciando-se de outras iniciativas por sua abordagem acessível, inclusiva e socialmente responsável. O produto final deverá consolidar a comunicação entre usuários e a empresa, reafirmando os valores da Prisma Tech e sua contribuição para a sociedade.
 
 ## 🛠 Tecnologias Utilizadas
