@@ -6,7 +6,7 @@
 ### 2. Objetivo
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O projeto tem como objetivo desenvolver um sistema web que disponibilize informações confiáveis sobre o Autismo, além de oferecer relatos, orientações e conteúdos que favoreçam a compreensão da temática. Busca-se, assim, construir uma plataforma acessível, segura, interativa e atrativa, alinhada ao propósito de disseminar conhecimento e fortalecer a comunicação entre usuários e a empresa.
 
-### 3. OBJETIVO ESPECÍFICO
+### 3. Objetivo específico
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Nosso objetivo específico é desenvolver uma plataforma digital interativa que promova conexão e acolhimento. O espaço será voltado para pessoas com TEA (Transtorno do Espectro Autista) e também para mães e cuidadores, permitindo que compartilhem histórias, informações e campanhas de conscientização em uma interface segura, acessível e confiável.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A plataforma reunirá indicações de ONGs - que oferecem apoio a pessoas autistas e suas famílias em todo o Brasil -, além de divulgar campanhas digitais de conscientização voltadas à sociedade como um todo, buscando sensibilizar a sociedade e reduzir o preconceito. Segundo a neurologista Isabella Peixoto Barcelos, a falta de informação é uma das principais causas de estigmas relacionados ao autismo. Também contará com um espaço exclusivo para voluntários e profissionais especializados, que poderão esclarecer dúvidas, orientar as famílias e oferecer suporte de forma colaborativa e solidária.
