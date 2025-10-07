@@ -27,6 +27,13 @@
 
 ### 
 
-## Integrantes
+## Integrantes que participaram da criação e desenvolvimento do projeto:
 
-* https://github.com/danidani1907
+- [@danidani1907](https://github.com/danidani1907)
+- [@giohk](https://github.com/giohk)
+- [@bellidin](https://github.com/bellidin)
+- [@julia-daniluski](https://github.com/julia-daniluski)
+- [@Zanirato](https://github.com/Zanirato)
+- [@laisboscolo](https://github.com/laisboscolo)
+- [@RayanneP](https://github.com/RayanneP)
+
