@@ -26,3 +26,7 @@
 ## 📁 Passo a Passo da criação
 
 ### 
+
+## Integrantes
+
+* @danielli
