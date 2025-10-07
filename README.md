@@ -27,7 +27,7 @@
 
 ### 
 
-## Integrantes que participaram da criação e desenvolvimento do projeto:
+## 👥 Integrantes que participaram da criação e desenvolvimento do projeto:
 
 - [@danidani1907](https://github.com/danidani1907)
 - [@giohk](https://github.com/giohk)
