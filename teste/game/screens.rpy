@@ -361,13 +361,13 @@ screen main_menu():
 
     # Círculos roxos usando imagens prontas de círculo
     add "images/circle.png" xalign 0.0 yalign 0.3 zoom 4.0
-    add "images/circle.png" xalign 0.9 yalign 0.3 zoom 4.0
+    add "images/circle.png" xalign 3 yalign 0.3 zoom 4.0
 
     # Personagem à esquerda
-    add "images/player.png" xalign 0.1 yalign 0.3 zoom 8
+    add "images/player.png" xalign 0.1 yalign 0.3 zoom 7.0
     
     # Personagem à direita
-    add "images/lucas.png" xalign 0.9 yalign 0.3 zoom 8
+    add "images/lucas.png" xalign 3 yalign 0.3 zoom 7.0
 
 
     # Logo
