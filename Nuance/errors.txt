@@ -1,0 +1,22 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/screens.rpy", line 1023: expected 'word' not found.
+    style
+          ^
+
+File "game/screens.rpy", line 1058: end of line expected.
+    use keyboard_help style "#000000"
+                      ^
+
+File "game/screens.rpy", line 1143: expected 'word' not found.
+    style
+          ^
+
+File "game/screens.rpy", line 1166: expected 'word' not found.
+    style
+          ^
+
+Ren'Py Version: Ren'Py 8.4.1.25072401
+Mon Oct 13 13:50:05 2025

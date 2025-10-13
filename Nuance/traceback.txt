@@ -1,0 +1,83 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+After initialization, but before game start.
+  File "game/screens.rpy", line 697, in analyze_screen
+    screen file_slots(title):
+  File "game/screens.rpy", line 697, in analyze
+    screen file_slots(title):
+  File "game/screens.rpy", line 697, in analyze
+    screen file_slots(title):
+  File "game/screens.rpy", line 701, in analyze
+    use game_menu(title):
+  File "game/screens.rpy", line 701, in analyze
+    use game_menu(title):
+  File "game/screens.rpy", line 703, in analyze
+    fixed:
+  File "game/screens.rpy", line 703, in analyze
+    fixed:
+  File "game/screens.rpy", line 722, in analyze
+    grid gui.file_slot_cols gui.file_slot_rows:
+  File "game/screens.rpy", line 722, in analyze
+    grid gui.file_slot_cols gui.file_slot_rows:
+  File "game/screens.rpy", line 730, in analyze
+    for i in range(gui.file_slot_cols 1- gui.file_slot_rows):
+  File "game/screens.rpy", line 730
+    range(gui.file_slot_cols 1- gui.file_slot_rows)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+-- Full Traceback ------------------------------------------------------------
+
+Traceback (most recent call last):
+  File "renpy/bootstrap.py", line 376, in bootstrap
+    renpy.main.main()
+    ~~~~~~~~~~~~~~~^^
+  File "renpy/main.py", line 614, in main
+    run(restart)
+    ~~~^^^^^^^^^
+  File "renpy/main.py", line 78, in run
+    renpy.display.screen.analyze_screens()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "renpy/display/screen.py", line 1006, in analyze_screens
+    s.ast.analyze_screen()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "game/screens.rpy", line 697, in analyze_screen
+    screen file_slots(title):
+  File "game/screens.rpy", line 697, in analyze
+    screen file_slots(title):
+  File "game/screens.rpy", line 697, in analyze
+    screen file_slots(title):
+  File "game/screens.rpy", line 701, in analyze
+    use game_menu(title):
+  File "game/screens.rpy", line 701, in analyze
+    use game_menu(title):
+  File "game/screens.rpy", line 703, in analyze
+    fixed:
+  File "game/screens.rpy", line 703, in analyze
+    fixed:
+  File "game/screens.rpy", line 722, in analyze
+    grid gui.file_slot_cols gui.file_slot_rows:
+  File "game/screens.rpy", line 722, in analyze
+    grid gui.file_slot_cols gui.file_slot_rows:
+  File "game/screens.rpy", line 730, in analyze
+    for i in range(gui.file_slot_cols 1- gui.file_slot_rows):
+  File "renpy/pyanalysis.py", line 674, in is_constant_expr
+    node, literal = ccache.ast_eval_literal(expr)
+                    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "renpy/pyanalysis.py", line 895, in ast_eval_literal
+    expr = py_compile(expr, "eval", ast_node=True)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/python.py", line 1247, in py_compile
+    raise e
+  File "renpy/python.py", line 1177, in py_compile
+    tree = compile(source, filename, py_mode, ast.PyCF_ONLY_AST | flags, True)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "game/screens.rpy", line 730
+    range(gui.file_slot_cols 1- gui.file_slot_rows)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+Windows-11-10.0.22621-SP0 AMD64
+Ren'Py 8.4.1.25072401
+Nuance 1.0
+Mon Oct 13 14:01:06 2025
