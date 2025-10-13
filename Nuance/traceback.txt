@@ -1,83 +1,108 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-After initialization, but before game start.
-  File "game/screens.rpy", line 697, in analyze_screen
-    screen file_slots(title):
-  File "game/screens.rpy", line 697, in analyze
-    screen file_slots(title):
-  File "game/screens.rpy", line 697, in analyze
-    screen file_slots(title):
-  File "game/screens.rpy", line 701, in analyze
-    use game_menu(title):
-  File "game/screens.rpy", line 701, in analyze
-    use game_menu(title):
-  File "game/screens.rpy", line 703, in analyze
-    fixed:
-  File "game/screens.rpy", line 703, in analyze
-    fixed:
-  File "game/screens.rpy", line 722, in analyze
-    grid gui.file_slot_cols gui.file_slot_rows:
-  File "game/screens.rpy", line 722, in analyze
-    grid gui.file_slot_cols gui.file_slot_rows:
-  File "game/screens.rpy", line 730, in analyze
-    for i in range(gui.file_slot_cols 1- gui.file_slot_rows):
-  File "game/screens.rpy", line 730
-    range(gui.file_slot_cols 1- gui.file_slot_rows)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-SyntaxError: invalid syntax. Perhaps you forgot a comma?
+While running game code:
+renpy.game.QuitException
+
+During handling of the above exception, another exception occurred:
+
+FileNotFoundError: [WinError 2] O sistema não pode encontrar o arquivo especificado: 'C:\\Users\\Dev_2o_Ano\\Desktop\\Renpy\\teste\\Nuance\\game\\saves\\persistent'
 
 -- Full Traceback ------------------------------------------------------------
+
+Traceback (most recent call last):
+  File "renpy/main.py", line 614, in main
+    run(restart)
+    ~~~^^^^^^^^^
+  File "renpy/main.py", line 137, in run
+    renpy.execution.run_context(True)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "renpy/execution.py", line 1022, in run_context
+    context.run()
+    ~~~~~~~~~~~^^
+  File "renpy/common/00start.rpy", line 282, in script
+    python:
+  File "renpy/ast.py", line 1187, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/python.py", line 1260, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/common/00start.rpy", line 286, in <module>
+    renpy.call_in_new_context("_main_menu")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "renpy/game.py", line 372, in call_in_new_context
+    return renpy.execution.run_context(False)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "renpy/execution.py", line 1022, in run_context
+    context.run()
+    ~~~~~~~~~~~^^
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in script
+    python hide:
+  File "renpy/ast.py", line 1187, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/python.py", line 1260, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in <module>
+    python hide:
+  File "renpy/common/_layout/screen_main_menu.rpym", line 35, in _execute_python_hide
+    ui.interact()
+    ~~~~~~~~~~~^^
+  File "renpy/ui.py", line 304, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/display/core.py", line 2219, in interact
+    repeat, rv = self.interact_core(
+                 ~~~~~~~~~~~~~~~~~~^
+        preloads=preloads,
+        ^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )  # type: ignore
+    ^                
+  File "renpy/display/core.py", line 3137, in interact_core
+    self.quit_event()
+    ~~~~~~~~~~~~~~~^^
+  File "renpy/display/core.py", line 1813, in quit_event
+    renpy.display.behavior.run(renpy.config.quit_action)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/display/behavior.py", line 411, in run
+    return action(*args, **kwargs)
+           ~~~~~~^^^^^^^^^^^^^^^^^
+  File "renpy/common/00action_menu.rpy", line 274, in __call__
+    renpy.quit(save=True)
+    ~~~~~~~~~~^^^^^^^^^^^
+  File "renpy/exports/restartexports.py", line 133, in quit
+    raise renpy.game.QuitException(relaunch=relaunch, status=status)
+renpy.game.QuitException
+
+During handling of the above exception, another exception occurred:
 
 Traceback (most recent call last):
   File "renpy/bootstrap.py", line 376, in bootstrap
     renpy.main.main()
     ~~~~~~~~~~~~~~~^^
-  File "renpy/main.py", line 614, in main
-    run(restart)
-    ~~~^^^^^^^^^
-  File "renpy/main.py", line 78, in run
-    renpy.display.screen.analyze_screens()
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
-  File "renpy/display/screen.py", line 1006, in analyze_screens
-    s.ast.analyze_screen()
-    ~~~~~~~~~~~~~~~~~~~~^^
-  File "game/screens.rpy", line 697, in analyze_screen
-    screen file_slots(title):
-  File "game/screens.rpy", line 697, in analyze
-    screen file_slots(title):
-  File "game/screens.rpy", line 697, in analyze
-    screen file_slots(title):
-  File "game/screens.rpy", line 701, in analyze
-    use game_menu(title):
-  File "game/screens.rpy", line 701, in analyze
-    use game_menu(title):
-  File "game/screens.rpy", line 703, in analyze
-    fixed:
-  File "game/screens.rpy", line 703, in analyze
-    fixed:
-  File "game/screens.rpy", line 722, in analyze
-    grid gui.file_slot_cols gui.file_slot_rows:
-  File "game/screens.rpy", line 722, in analyze
-    grid gui.file_slot_cols gui.file_slot_rows:
-  File "game/screens.rpy", line 730, in analyze
-    for i in range(gui.file_slot_cols 1- gui.file_slot_rows):
-  File "renpy/pyanalysis.py", line 674, in is_constant_expr
-    node, literal = ccache.ast_eval_literal(expr)
-                    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
-  File "renpy/pyanalysis.py", line 895, in ast_eval_literal
-    expr = py_compile(expr, "eval", ast_node=True)
-           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "renpy/python.py", line 1247, in py_compile
-    raise e
-  File "renpy/python.py", line 1177, in py_compile
-    tree = compile(source, filename, py_mode, ast.PyCF_ONLY_AST | flags, True)
-           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "game/screens.rpy", line 730
-    range(gui.file_slot_cols 1- gui.file_slot_rows)
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-SyntaxError: invalid syntax. Perhaps you forgot a comma?
+  File "renpy/main.py", line 626, in main
+    renpy.persistent.update(True)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "renpy/persistent.py", line 461, in update
+    save()
+    ~~~~^^
+  File "renpy/persistent.py", line 484, in save
+    renpy.loadsave.location.save_persistent(compressed)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "renpy/savelocation.py", line 619, in save_persistent
+    l.save_persistent(data)
+    ~~~~~~~~~~~~~~~~~^^^^^^
+  File "renpy/savelocation.py", line 434, in save_persistent
+    self.persistent_mtime = os.path.getmtime(fn)
+                            ~~~~~~~~~~~~~~~~^^^^
+  File "<frozen genericpath>", line 67, in getmtime
+FileNotFoundError: [WinError 2] O sistema não pode encontrar o arquivo especificado: 'C:\\Users\\Dev_2o_Ano\\Desktop\\Renpy\\teste\\Nuance\\game\\saves\\persistent'
 
 Windows-11-10.0.22621-SP0 AMD64
 Ren'Py 8.4.1.25072401
 Nuance 1.0
-Mon Oct 13 14:01:06 2025
+Mon Oct 13 15:54:42 2025
