@@ -23,6 +23,10 @@ define config.has_sound = True
 define config.has_music = True
 define config.has_voice = True
 
+init python:
+    # Música do menu principal
+    config.main_menu_music = "audio/musics/inicio.mp3"
+
 ## Transições ##################################################################
 
 define config.enter_transition = dissolve
@@ -94,8 +98,6 @@ default preferences.afm_time = 15
 
 # Volume
 default preferences.music_volume = 1.0
-default preferences.sound_volume = 1.0
-default preferences.voice_volume = 1.0
 default preferences.all_mute = False
 
 # Opções de pular
@@ -123,42 +125,57 @@ init python:
     build.documentation('*.txt')
 
 ## ========================================================================== ##
-## ESCOLHAS PERSONALIZADAS (sem fundo preto, grandes e visíveis) #############
+## ESCOLHAS PERSONALIZADAS (com fundo preto translúcido e botões largos) ######
+## ========================================================================== ##
 
 screen choice(items):
-    frame:
-        background None
+    # Fundo preto translúcido ocupando boa parte da tela com fade suave
+    add Solid("#00000080") at fade_in_choice
+
+    vbox:
+        spacing 25
         xalign 0.5
-        yalign 0.5
+        yalign 0.6  # posição um pouco mais baixa no centro
 
-        vbox:
-            spacing 25
-            xalign 0.5
-            yalign 0.5
+        for i in items:
+            textbutton i.caption action i.action:
+                style "choice_button"
+                at choice_anim
 
-            for i in items:
-                textbutton i.caption action i.action:
-                    style "choice_button"
-                    at choice_anim
-
+# ===============================
+# Estilo dos botões de escolha
+# ===============================
 style choice_button is default:
-    background Frame(Solid(COLOR_PRIMARY), 30, 30)
-    hover_background Frame(Solid(COLOR_HOVER), 30, 30)
-    xminimum 800
+    background Frame(Solid(COLOR_PRIMARY), 40, 40)           # Fundo lilás com bordas suaves
+    hover_background Frame(Solid(COLOR_HOVER), 40, 40)       # Fundo rosa no hover
+    xminimum 700                                             # Botões largos
     yminimum 100
-    padding (30, 15)
+    padding (25, 20)
     xalign 0.5
     yalign 0.5
+    outlines [(2, "#FFFFFF", 0, 0)]                          # Borda branca leve
+    hover_outlines [(3, "#FFFFFF", 0, 0)]
 
 style choice_button_text is default:
-    color "#FFFFFF"
-    size 40
+    color COLOR_TEXT
+    hover_color "#000000"
+    size 38
     bold True
     text_align 0.5
     outlines [(2, "#000000", 0, 0)]
 
+# ===============================
+# Animação de hover dos botões
+# ===============================
 transform choice_anim:
     on hover:
-        zoom 1.05
+        ease 0.15 zoom 1.05
     on idle:
-        zoom 1.0
+        ease 0.15 zoom 1.0
+
+# ===============================
+# Animação de fade-in do fundo preto
+# ===============================
+transform fade_in_choice:
+    alpha 0.0
+    linear 0.3 alpha 1.0

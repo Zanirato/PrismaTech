@@ -1,17 +1,29 @@
-﻿# =======================================
-# CONFIGURAÇÕES INICIAIS
-# =======================================
-define narrator = Character(None)   # narração sem nome
-define p = Character("[player_name]")  # jogador (nome dinâmico)
-define c = Character("Carmen")
-define a = Character("Alicia")
-define l = Character("Lucas")
-define t = Character("Thaynara")
-define m = Character("Matheus")
-define n = Character("Nicole")
-define z = Character("Professor Zacarias")
-define u = Character("Luana")
-define y = Character("Trabalhador da feira de adoção")
+﻿# ======================================================
+# CONFIGURAÇÃO DE AUTO VOICE E PERSONAGENS
+# ======================================================
+
+# Ativa o sistema de auto voice (Ren'Py vai procurar os áudios automaticamente)
+define config.auto_voice = "audio/voices"
+define config.has_voice = True
+
+# ------------------------------------------------------
+# Personagens do jogo (cores harmoniosas com #B78AE0)
+# ------------------------------------------------------
+
+define narrator = Character(None, color="#FFFFFF")   # narração sem nome
+define p = Character("[player_name]", color="#000000")  # jogador (nome dinâmico)
+
+define c = Character("Carmen", color="#ff1389")          
+define a = Character("Alicia", color="#9C27B0")         
+define l = Character("Lucas", color="#54008f")           
+define t = Character("Thaynara", color="#cd0174")     
+define m = Character("Matheus", color="#001b91")       
+define n = Character("Nicole", color="#9a0069", )         
+define z = Character("Professor Zacarias", color="#5d00ff") 
+define u = Character("Luana", color="#9700a5", voice_tag="luana")          
+define y = Character("Trabalhador da feira de adoção", color="#1f004a")
+
+
 
 default player_name = "???"
 default lucas_confidence = 0     # aumenta conforme o jogador apoia
@@ -122,7 +134,8 @@ screen middle_choice_screen(choices):
 # LABEL INICIAL
 # =======================================
 label start:
-
+    stop music fadeout 1.0
+    play music "audio/musics/jogo.mp3" fadein 1.0
     scene bg_room with fade
     show player normal at left
 
@@ -227,9 +240,12 @@ label scene3:
 
 label scene3_choice:
 
+
+    a "Sei lá. É estranho. Ele age estranho e fala que é culpa do autismo, mas ele nem parece ser autista."
+
     $ choices = [
         "Sair de perto da Alicia",
-        "Isso é bullying, Alicia! O que você tem na cabeça pra pensar em algo assim?"
+        "E pessoas com TEA tem aparencia? Acorda para a vida, Alicia! Isso é bullying."
     ]
     $ actions = [
         lambda: renpy.store.__setattr__("lucas_confidence", lucas_confidence),
