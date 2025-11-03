@@ -4,7 +4,7 @@
 ## 2. Descrição do Projeto
 
 ### 2.1- Contexto e Justificativa
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O projeto da Prisma Tech — uma empresa fictícia criada para fins acadêmicos — tem como objetivo desenvolver uma solução para combater a desinformação sobre o Transtorno do Espectro Autista (TEA) por meio de um jogo. A iniciativa busca integrar tecnologia e responsabilidade social, promovendo inclusão, diversidade e conscientização da sociedade acerca do tema.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O projeto da Prisma Tech tem como objetivo desenvolver uma solução para combater a desinformação sobre o Transtorno do Espectro Autista (TEA) por meio de um jogo. A iniciativa busca integrar tecnologia e responsabilidade social, promovendo inclusão, diversidade e conscientização da sociedade acerca do tema.
 
 ### 2.2- Objetivo
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O projeto tem como objetivo desenvolver uma visual novel — um jogo baseado em roteiro no qual o jogador pode influenciar o desenrolar da história — que promova a conscientização sobre o Transtorno do Espectro Autista (TEA). Voltado especialmente para crianças e jovens, que cada vez mais têm contato com a tecnologia, o jogo busca proporcionar aprendizado sobre o TEA, combater a desinformação e o preconceito relacionados ao estigma da saúde mental, e, por meio da narrativa interativa, unir entretenimento e aprendizado, incentivando empatia, respeito à diversidade e inclusão social.
