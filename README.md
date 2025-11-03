@@ -72,20 +72,23 @@
 
 ### 4.3- Roteiro e Decisões
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  O roteiro é interativo, permitindo que o jogador **influencie o desenrolar da história**:
+#### 4.3.1- Roteiro
 
-* Decisões afetam relações com personagens e desfechos.
-* Situações inspiradas em experiências reais de pessoas com TEA, bullying e desafios de socialização.
-* Opções de diálogo e ação reforçam **empatia, conscientização e aprendizado**.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  O roteiro da visual novel Nuance acompanha a história de Lucas, um adolescente autista nível 1 de suporte, e sua relação de amizade com o jogador. Inicialmente, o jogador conhece Lucas e observa suas dificuldades de socialização, enquanto também presencia situações de bullying e preconceito por parte de colegas como Alicia, Nicole e Matheus. Durante essas interações, o jogador pode escolher apoiar Lucas, defendê-lo ou ignorá-lo, decisões que impactam diretamente a confiança e o bem-estar do protagonista.
 
----
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ao longo da narrativa, Lucas demonstra interesse em se aproximar de Luana, mas sente insegurança para iniciar a conversa. O jogador tem a oportunidade de encorajá-lo, mostrando a importância do apoio de amigos na construção da autoconfiança. Uma das decisões centrais da história envolve a adoção de um animal de estimação — o jogador ajuda Lucas a escolher entre um gato preto ou um cachorro caramelo — e essa escolha influencia o tipo de vínculo emocional, estimulando a interação social e promovendo segurança emocional.
 
-Se quiser, posso criar uma versão **ainda mais enxuta**, ideal para slides ou resumo do TCC, com todos os pontos principais em 5-6 linhas. Quer que eu faça?
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Após o fim das férias e a adoção do animal escolhido, Lucas retorna mais confiante e entusiasmado, compartilhando com o jogador suas experiências com o animal e mostrando evolução na socialização. Ele interage de forma mais aberta com colegas, incluindo Luana, e consegue se expressar em sala de aula, defendendo suas escolhas e mostrando crescimento pessoal. O roteiro enfatiza o impacto positivo da amizade, do apoio emocional e da presença do animal de estimação, culminando em uma conclusão que reforça a empatia, a paciência e a importância de se sentir compreendido e valorizado.
 
+#### 4.3.2- Decisões:
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  O jogador influencia diretamente a narrativa por meio das escolhas de diálogo, que podem afetar a interação com os outros personagens e o próprio Lucas. Dependendo das respostas selecionadas, o jogador pode ajudar Lucas a se abrir, fortalecer sua confiança ou, ao contrário, fazê-lo se fechar mais. Além disso, o jogador decide qual animal de estimação Lucas irá adotar — gato ou cachorro — o que impacta o tipo de vínculo emocional, o desenvolvimento social do protagonista e suas experiências futuras no jogo.
+
+##
 
 ### 
 
-## 5. Integrantes que participaram da criação e desenvolvimento do projeto:
+## 6. Integrantes que participaram da criação e desenvolvimento do projeto:
 
 - [@danidani1907](https://github.com/danidani1907)
 - [@giohk](https://github.com/giohk)
