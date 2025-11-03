@@ -84,9 +84,21 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  O jogador influencia diretamente a narrativa por meio das escolhas de diálogo, que podem afetar a interação com os outros personagens e o próprio Lucas. Dependendo das respostas selecionadas, o jogador pode ajudar Lucas a se abrir, fortalecer sua confiança ou, ao contrário, fazê-lo se fechar mais. Além disso, o jogador decide qual animal de estimação Lucas irá adotar — gato ou cachorro — o que impacta o tipo de vínculo emocional, o desenvolvimento social do protagonista e suas experiências futuras no jogo.
 
-##
+## 5. Código: 
 
-### 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  O desenvolvimento do código foi realizado utilizando a ferramenta Ren’Py, um aplicativo que precisa ser instalado separadamente e que combina Python com recursos específicos para criação de visual novels. A equipe encontrou o Ren’Py de forma independente, sem nenhum ensinamento formal, aprendendo sozinhas a utilizá-lo ao longo do projeto.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   Para organizar o trabalho e permitir que duas pessoas pudessem programar simultaneamente, o código foi estruturado de maneira modular em computadores diferentes. O jogo foi planejado para ser jogado exclusivamente na orientação horizontal, garantindo uma experiência visual consistente.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   Dentro da pasta game, os arquivos estão organizados da seguinte forma:
+
+* gui.rpy: configurações da interface do usuário;
+* screens.rpy: definição das telas, menus e elementos visuais interativos;
+* options.rpy: opções de configuração do jogo, como som, cores e preferências;
+* script.rpy: contém toda a narrativa, diálogos, escolhas do jogador e lógica de ramificação;
+* Pastas adicionais: contêm imagens, músicas e demais recursos multimídia utilizados no jogo;
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Essa estrutura modular facilita a manutenção, futuras atualizações e possibilita que cada desenvolvedor trabalhe em partes específicas do projeto sem conflitos.
 
 ## 6. Integrantes que participaram da criação e desenvolvimento do projeto:
 
